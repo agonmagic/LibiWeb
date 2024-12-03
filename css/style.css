@@ -25,7 +25,7 @@ body{
 }
 
 header{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 800;
     background-color: var(--cherry);
     color: var(--pink);
@@ -156,10 +156,15 @@ button:hover{
     }
 }
 
+
 @media (max-width: 1024px){
     .video iframe{
         width: 720px;
         height: 480px;
+    }
+
+    header{
+        font-size: 45px;
     }
 }
 
@@ -211,11 +216,19 @@ button:hover{
         width: 480px;
         height: 270px;
     }
+
+    header{
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 480px){
     .video iframe{
         width: 370px;
         height: 208px;
+    }
+
+    header{
+        font-size: 32px;
     }
 }
