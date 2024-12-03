@@ -1,0 +1,221 @@
+:root{
+    --pink: #FFCFEF;
+    --light-blue: #0A97B0;
+    --dark-blue: #0A5EB0;
+    --blackish: #2A3335;
+    --cherry: #AF1740;
+    --font1: "Parkinsans";
+    --fontscript: "Dancing Script";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body{
+    /*background: url("/images/back.jpg");*/
+    background-color: var(--pink);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+header{
+    font-size: 70px;
+    font-weight: 800;
+    background-color: var(--cherry);
+    color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 8px var(--cherry);
+}
+
+header:hover{
+    cursor: pointer;
+}
+
+.text{
+    margin: 5px;
+}
+
+.mbiemri{
+    display: none;
+    margin-left: 5px;
+}
+
+.show{
+    display: inline;
+}
+
+/* .mosha{
+    font-family: var(--fontscript);
+    color: var(--blackish);
+} */
+
+.description p{
+    text-align: center;
+    font-size: 20px;
+    color: var(--cherry);
+    width: 80%;
+    margin: 10px auto;
+}
+
+.template{
+    font-size: 16px;
+}
+
+.heart{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+.line{
+    border-top: 1px solid var(--blackish);
+    margin: 20px auto;
+    width: 70%;
+}
+
+.videotext{
+    text-align: center;
+    color: var(--cherry);
+}
+
+.videotext h3{
+    font-size: 30px;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+/* .aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width.
+}
+*/
+
+.video iframe{
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px var(--cherry);
+}
+
+button{
+    margin: 30px auto 0 auto;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(#ff648d);
+    color: var(--cherry);
+    border: 3px solid var(--cherry);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--cherry);
+    color: white;
+    box-shadow: 0px 0px 5px var(--cherry);
+}
+
+.final{
+    width: 90%;
+    height: auto;
+    margin: 5px auto;
+}
+
+.final p{
+    text-align: center;
+    font-size: 12px;
+    color: var(--cherry);
+}
+
+@media (max-width: 1280px){
+    .video iframe{
+        width: 1152px;
+        height: 648px;
+    }
+}
+
+@media (max-width: 1152px){
+    .video iframe{
+        width: 1024px;
+        height: 576px;
+    }
+}
+
+@media (max-width: 1024px){
+    .video iframe{
+        width: 720px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 720px){
+    .video iframe{
+        width: 640px;
+        height: 360px;
+    }
+
+    header{
+        font-size: 24px;
+        font-weight: 800;
+        background-color: var(--cherry);
+        color: var(--pink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        box-shadow: 0px 0px 8px var(--cherry);
+    }
+
+    .description{
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .description p{
+        font-size: 18px;
+    }
+
+    .videotext{
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .videotext h3{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .template{
+        font-size: 14px;
+    }
+}   
+
+@media (max-width: 640px){
+    .video iframe{
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 480px){
+    .video iframe{
+        width: 370px;
+        height: 208px;
+    }
+}
