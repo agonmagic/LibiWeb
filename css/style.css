@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --pink: #FFCFEF;
     --light-blue: #0A97B0;
     --dark-blue: #0A5EB0;
@@ -6,7 +6,7 @@
     --cherry: #AF1740;
     --font1: "Parkinsans";
     --fontscript: "Dancing Script";
-}
+} */
 
 *{
     margin: 0;
@@ -27,14 +27,15 @@ body{
 header{
     font-size: 64px;
     font-weight: 800;
-    background-color: var(--cherry);
-    color: var(--pink);
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     width: 100%;
-    box-shadow: 0px 0px 8px var(--cherry);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
 }
 
 header:hover{
@@ -64,7 +65,7 @@ header:hover{
     font-size: 20px;
     color: var(--cherry);
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .template{
@@ -74,13 +75,6 @@ header:hover{
 .heart{
     font-weight: 700;
     font-size: 25px;
-}
-
-
-.line{
-    border-top: 1px solid var(--blackish);
-    margin: 20px auto;
-    width: 70%;
 }
 
 .videotext{
@@ -97,7 +91,7 @@ header:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 30px auto;
+    margin-bottom: 30px;
 }
 
 /* .aspect-ratio {
@@ -110,7 +104,7 @@ header:hover{
 
 .video iframe{
     border-radius: 10px;
-    box-shadow: 0px 0px 30px var(--cherry);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
 }
 
 button{
